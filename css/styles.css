@@ -72,10 +72,22 @@
     margin: 0;
 }
 
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 .loader .percentage {
-    width: 45%;
+    width: 0%;
     height: 38px;
     background: orange;
+    animation: linear load 5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .vinyl {
