@@ -26,6 +26,7 @@
     overflow: hidden;
     background: #eee;
     padding: 0 10px;
+    transition: height .5s;
 }
 
 .accordion-body.open {
