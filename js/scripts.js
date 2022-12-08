@@ -10,3 +10,11 @@ document.querySelectorAll('.accordion').forEach(accordion => {
         }
     })
 })
+
+document.querySelector('.modal-open').addEventListener('click', e => {
+    document.querySelector('.modal').classList.add('open')
+})
+
+document.querySelector('.modal-close').addEventListener('click', e => {
+    document.querySelector('.modal').classList.remove('open')
+})
